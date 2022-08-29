@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Welcome Back</title>
+  </head>
+  <body>
+    <h1 id="newH1">Welcome!!!</h1>
+    <p id="demo"></p>
+
+    <script>
+// console.log("1");
+// console.log("2");
+// setTimeout(() => console.log("Operation"), 3000);
+// console.log("3");
+// console.log("1");
+// console.log("2");
+// window.alert("Operation")
+// console.log("3");
+// function myDisplayer(some) {
+//   document.getElementById("demo").innerHTML = some;
+// }
+
+// function myCalculator(num1, num2) {
+//   let sum = num1 + num2;
+//   myDisplayer(sum);
+// }
+
+// myCalculator(5, 5);
+//  function fact (n){
+//     let x =1;
+//     if(n==0){
+//         n=1;
+//     }
+//     else{
+//         x=n*fact(n-1)
+//     }
+//     return x
+//  }
+// console.log(fact(6))
+// function sum(n){
+//     let x1 =0
+//     if(n==0){
+//     n=0}
+//     else{
+//    x1+=n+sum(n-1)
+// }
+// return x1
+// }
+// console.log(sum(6))
+
+// Create a function called sum2
+// that take two parameter
+// and will return the sumation from the first number to the second number
+
+// Ex: sum2(4, 5); => 4 + 5 => 9
+// Ex: sum2(3, 6); => 3 + 4 + 5 + 6 => 18
+
+function sum2(n1,n2){
+    var x=0
+    if(n1>n2){
+        n1=n2
+    }
+    else{
+        x+= n1+sum2(n1+1,n2)
+    }
+    return x
+}
+console.log(sum2(2,6))
+// function go(n1,n2){
+//     var x=''
+//     if(0>=n2){
+//         n2=0
+//     }
+//     else if(n2==1){
+//         x+= `${n1}${go(n1,n2-1)}"`
+//     }
+//   else{
+//         x+= `${n1} ${go(n1,n2-1)}`
+//     }
+//     return x
+// }
+// console.log(`"${go("no",6)}`)
+
+
+    </script>
+  </body>
+</html>
